@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos gerais */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fafafa;
+    background-image: url('https://images.hdqwalls.com/download/assetto-corsa-video-game-5k-bo-2048x1152.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+  }
+  
+  /* Header e Navegação */
+  header {
+    background-color: #333;
+    padding: 20px 0;
+  }
+  
+  .nav-container {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-container li {
+    margin: 0 15px;
+  }
+  
+  .nav-container li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-container li a:hover {
+    text-decoration: underline;
+  }
+
+/* Conteúdo Principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1,
+.home-main {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Formulário */
+.form-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: none;
+}
+
+/* Botão de Envio */
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  a {
+      color: blueviolet;
+  }
+
+  a:hover {
+      color: rgb(177, 95, 255);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    
+    .nav-container li {
+        margin: 0.25rem 0;
+    }
+}
