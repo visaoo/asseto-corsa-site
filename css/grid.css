@@ -78,6 +78,7 @@ h1 {
     font-size: 1.2rem;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%; /* Adicionado para garantir que a imagem não ultrapasse o limite */
 }
 
 .grid-item:hover {
@@ -90,6 +91,8 @@ h1 {
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
+    max-width: 100%; /* Adicionado para garantir que a imagem não ultrapasse o limite */
+    overflow: hidden; /* impede que qualquer parte da imagem ultrapasse a borda do .grid-item. */
 }
 
 .grid-btn-download {
